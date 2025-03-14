@@ -1,7 +1,8 @@
 <?php
 //Напиши функцию, которая принимает строку и возвращает её с заглавными буквами.
 function upperCase($str){
-    return strtoupper($str);
+    return mb_strtoupper($str);
 }
 
-print_r(upperCase("hello")); // не роб рус
+print_r(upperCase("hello Привет")); // не роб рус / робит
+
